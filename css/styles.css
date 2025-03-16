@@ -663,6 +663,11 @@ video {
         font-weight: 400;
     }
 
+    .popup{
+        position: relative;
+        right: 100px;
+    }
+
     .title-row{
         height: 600px;
     }
