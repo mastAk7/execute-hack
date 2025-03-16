@@ -723,6 +723,7 @@ video {
 
 /* Popup Box (Hidden by Default) */
 .popup {
+    height: 100px;
     display: none;
     position: absolute;
     top: 60px;
