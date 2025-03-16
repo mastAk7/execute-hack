@@ -49,7 +49,7 @@ p{
 
 .coloured-section{
     color: #fff;
-    background-color: #F29F58;
+    background-color: #255F38;
 }
 
 
@@ -62,7 +62,7 @@ p{
 }
 
 .coloured-section .navbar{
-    background-color: #F29F58;
+    background-color: #255F38;
 }
 
 .white-section .navbar{
@@ -102,7 +102,7 @@ p{
 }
 
 .nav-btn-1:hover{
-    color: #F29F58;
+    color: #255F38;
 }
 
 .nav-btn-1:active{
@@ -110,7 +110,7 @@ p{
     color: #fff;
 }
 
-.white-section .nav-btn-1{
+.colored-section .nav-btn-1{
     color: #F29F58;
     border-color: #F29F58;
 }
@@ -121,7 +121,7 @@ p{
 }
 
 .nav-btn-2{
-    color: #F29F58;
+    color: #255F38;
 }
 
 .white-section .nav-btn-2{
@@ -131,11 +131,7 @@ p{
 }
 
 .nav-btn-2:hover{
-    color: #F29F58;
-}
-
-.nav-btn-2:hover{
-    color: #F29F58;
+    color: #255F38;
 }
 
 .white-section .nav-btn-2:hover{
@@ -167,7 +163,7 @@ p{
 .title-btn-div{
     display: flex;
     justify-content: center;
-    background-color: #F29F58;
+    background-color: #255F38;
     padding-top: 3%;
     padding-bottom: 4%;
     position: relative;
@@ -199,7 +195,7 @@ p{
 }
 
 .title-btn-2:hover{
-    color: #F29F58;
+    color: #255F38;
 }
 
 .white-section .title-btn-2:hover{
@@ -238,7 +234,7 @@ p{
 }
 
 .feature-icon{
-    color: #AB4459;
+    color: #b4ca9b;
     margin-bottom: 15px;
 }
 
@@ -284,24 +280,24 @@ p{
 .hiw-btn{
     font-size: 1.5rem;
     margin: 10px;
-    background-color: #F29F58;
+    background-color: #255F38;
     color: #fff;
 }
 
 .hiw-btn:hover{
-    background-color: #dc7e2c;
+    background-color: #378f54;
     color: #fff;
 }
 
 .hiw-btn-outline{
     margin: 10px;
     font-size: 1.5rem;
-    color: #F29F58;
-    border-color: #F29F58;
+    color: #255F38;
+    border-color: #255F38;
 }
 
 .hiw-btn-outline:hover{
-    background-color:#F29F58;
+    background-color:#255F38;
     color: #fff;
 }
 
@@ -366,63 +362,63 @@ p{
 }
 
 .login h1{
-    color: #F29F58;
+    color: #255F38;
     font-size: 2.5rem;
 }
 
 .login input:focus {
     outline: none; /* Remove default outline */
-    border: 1px solid #f8831d; /* Orange border */
-    box-shadow: 0 0 0 0.3rem #ffc694 !important; /* Light orange glow */
+    border: 1px solid #255F38; /* Orange border */
+    box-shadow: 0 0 0 0.3rem #378f54 !important; /* Light orange glow */
 }
 
 .login .btn-dark{
     width: 325px;
     height: 60px;
-    background-color: #F29F58;
-    border-color: #F29F58;
+    background-color: #255F38;
+    border-color: #255F38;
     font-size: large;
     margin-bottom: 8px;
 }
 
 .login .btn-dark:hover{
-    background-color: #dc7e2c;
+    background-color: #378f54;
 }
 
 .login .btn-dark:active{
-    background-color: #F29F58;
-    border-color: #F29F58;
+    background-color: #255F38;
+    border-color: #255F38;
 }
 
 .login .btn-outline-dark{
     text-align: left;
     width: 325px;
     height: 60px;
-    color: #F29F58;
-    border-color: #F29F58;
+    color: #255F38;
+    border-color: #255F38;
     font-weight: 600;
     font-size: large;
     margin-bottom: 8px;
 }
 
 .login .btn-outline-dark:hover{
-    background-color: #F29F58;
+    background-color: #255F38;
     color: #fff;
 }
 
 .login .btn-outline-dark:active{
-    background-color: #dc7e2c;
-    border-color: #dc7e2c;
+    background-color: #378f54;
+    border-color: #378f54;
 }
 
 .login a{
     text-decoration: none;
-    color: #F29F58;
+    color: #255F38;
     font-weight: 500;
 }
 
 .login a:hover{
-    color: #dc7e2c;
+    color: #378f54;
 }
 
 .login p{
@@ -543,7 +539,7 @@ video {
 
 @media (max-width: 991.2px){
     #title h1{
-        background-color: #F29F58;
+        background-color: #255F38;
         padding-bottom: 5%;
         position: relative;
         z-index: 1;
