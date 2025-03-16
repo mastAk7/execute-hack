@@ -664,9 +664,9 @@ video {
     }
 
     .popup{
-        position: relative;
-        right: 150px;
-        bottom: 50px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
         z-index: 1000;
     }
 
