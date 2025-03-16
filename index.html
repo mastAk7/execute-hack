@@ -14,9 +14,10 @@
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3f1edf2db4.js" crossorigin="anonymous"></script> 
-
+    
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/script.js" defer></script>
 
 
     <title>clarityIQ</title>
@@ -46,10 +47,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="nav-btn-div">
+                <div  id="login-section" class="nav-btn-div">
                     <a href="login.html" class="nav-btn btn btn-outline-light nav-btn-1" role="button"> Log in </a>
                     <a href="signUp.html" class="nav-btn btn btn-light nav-btn-2"> Sign up </a>
-                </div> 
+                </div>
+                <div id="user-section" class="nav-btn-div" style="display: none;">
+                    <img id="user-pic" src="" alt="User Image" width="50" height="50">
+                    <p id="user-name"></p>
+                    <p id="user-email"></p>
+                    <button onclick="logout()">Logout</button>
+                </div>
                 <button class="navbar-toggler nav-tog-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -194,7 +201,7 @@
                     <div class="card">
                         <p> Step 1</p>
                         <h3> Create account</h3>
-                        <div>
+                        <div id="login-section-2">
                             <a href="login.html" class="btn btn-outline-light hiw-btn-outline" role="button"> Log in </a>
                             <a href="signUp.html" class="btn btn-light hiw-btn"> Sign up </a>
                         </div>
