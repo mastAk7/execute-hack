@@ -16,11 +16,13 @@
     <script src="https://kit.fontawesome.com/3f1edf2db4.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 
     <title> Login </title>
 </head>
 <body>
-
+    
     <div class="container-fluid login">
             <div class="card">
                 <div class="card-body">
@@ -44,13 +46,44 @@
                         <div class="col-5"> <hr></div>
                     </div>
                     <br>
-                    <button class="btn btn-outline-dark" type="button"><i class="fa-brands fa-google"></i> Continue with Google</button>
+                    <div id="g_id_onload"
+                         data-client_id="1015796529096-1dbhqv6pa7grrfjaf66m1qc5oa68hksk.apps.googleusercontent.com"
+                         data-callback="handleCredentialResponse"
+                         data-auto_prompt="false">
+                    </div>
+
+                    <button class="btn btn-outline-dark g_id_signin" type="button"><i class="fa-brands fa-google"></i> Continue with Google</button>
                     <br>
                     <button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-envelope"></i> Continue with Email</button>
                     <br>
                 </div>
             </div>
     </div>
+    <script>
+        function handleCredentialResponse(response) {
+            // Decode JWT token to get user details
+            const responsePayload = parseJwt(response.credential);
+      
+            console.log("User Info:", responsePayload);
+            console.log("ID:", responsePayload.sub);
+            console.log("Full Name:", responsePayload.name);
+            console.log("Email:", responsePayload.email);
+            
+            // You can now send this data to your backend to store in the database
+        }
+      
+        // Function to decode JWT token
+        function parseJwt(token) {
+            var base64Url = token.split('.')[1];
+            var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+      
+            return JSON.parse(jsonPayload);
+        }
+      </script>
+      
     
 </body>
 </html>
