@@ -38,9 +38,19 @@ How It Works
 
 5. Download Data: Users can export the results as a CSV file.
 
-Contributions
+Screenshots/Demo
+   ![image](https://github.com/user-attachments/assets/96636d76-d65f-49b4-9d82-3866357622ab)
+   ![image](https://github.com/user-attachments/assets/5ad20aa9-d10b-44c5-9f99-98f8b971d1ad)
+![image](https://github.com/user-attachments/assets/ad08df8d-567c-4243-861e-7d44bcab43d9)
 
-Feel free to open issues and pull requests to contribute to the project.
+
+Use Cases
+ 
+1. Analyze public opinion on brands, products, or events.
+2. Track sentiment trends over time.
+3. Use for market research or competitor analysis.
+
+Website - https://execute-hack.vercel.app/
 
 License
 
