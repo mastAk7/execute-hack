@@ -16,11 +16,13 @@
     <script src="https://kit.fontawesome.com/3f1edf2db4.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/script.js" defer></script>
 
     <title> Login </title>
 </head>
 <body>
-
+    
     <div class="container-fluid login">
             <div class="card">
                 <div class="card-body">
@@ -44,13 +46,20 @@
                         <div class="col-5"> <hr></div>
                     </div>
                     <br>
-                    <button class="btn btn-outline-dark" type="button"><i class="fa-brands fa-google"></i> Continue with Google</button>
+                    <div id="g_id_onload"
+                         data-client_id="1015796529096-1dbhqv6pa7grrfjaf66m1qc5oa68hksk.apps.googleusercontent.com"
+                         data-callback="handleCredentialResponse"
+                         data-auto_prompt="false">
+                    </div>
+
+                    <button class="btn btn-outline-dark g_id_signin" type="button"><i class="fa-brands fa-google"></i> Continue with Google</button>
                     <br>
                     <button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-envelope"></i> Continue with Email</button>
                     <br>
                 </div>
             </div>
     </div>
+    
     
 </body>
 </html>
