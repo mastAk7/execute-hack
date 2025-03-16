@@ -739,7 +739,7 @@ video {
 
 /* Popup Content */
 .popup p {
-    color: #255F38;
+    color: #255F38 !important;
     margin: 5px 0;
     font-size: 14px;
 }
