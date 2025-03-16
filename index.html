@@ -17,7 +17,6 @@
     
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="js/script.js" defer></script>
 
 
     <title>clarityIQ</title>
@@ -241,6 +240,34 @@
             <p>© Copyright 2025 clarityIQ</p>
         </div>
     </section>
+    <script>
+        const checkbox = document.getElementById('termsCheckbox');
+        const submitButton = document.getElementById('submitButton');
+
+        checkbox.addEventListener('change', function () {
+            submitButton.disabled = !checkbox.checked;
+        });
+
+    </script>
+    <script>
+        window.onload = function () {
+            const savedUser = localStorage.getItem('user');
+            if (savedUser) {
+                const user = JSON.parse(savedUser);
+    
+                document.getElementById('user-section').style.display = 'block';
+                document.getElementById('user-pic').src = user.picture;
+                document.getElementById('user-name').innerText = `Hello, ${user.name}!`;
+                document.getElementById('user-email').innerText = user.email;
+            }
+        };
+    
+        function logout() {
+            localStorage.removeItem('user');
+            window.location.href = "login.html"; // Redirect to login
+        }
+    </script>
+    
     
 </body>
 </html>

@@ -1,9 +1,3 @@
-const checkbox = document.getElementById('termsCheckbox');
-const submitButton = document.getElementById('submitButton');
-
-checkbox.addEventListener('change', function () {
-    submitButton.disabled = !checkbox.checked;
-});
 
 
 function handleCredentialResponse(response) {
@@ -13,34 +7,8 @@ function handleCredentialResponse(response) {
     // Store user info in localStorage to persist login
     localStorage.setItem('user', JSON.stringify(user));
 
-    // Update UI
-    updateUI(user);
-}
-
-function updateUI(user) {
-    // Hide login section & show user section
-    document.getElementById('login-section-2').style.display = 'none';
-    document.getElementById('login-section').style.display = 'none';
-    document.getElementById('user-section').style.display = 'block';
-
-    // Update user info in UI
-    document.getElementById('user-pic').src = user.picture;
-    document.getElementById('user-name').innerText = `Hello, ${user.name}!`;
-    document.getElementById('user-email').innerText = user.email;
-
-    window.location.href = "index.html";
-}
-
-function logout() {
-    // Clear user session
-    localStorage.removeItem('user');
-
-    // Show login section & hide user section
-    document.getElementById('login-section').style.display = 'block';
-    document.getElementById('login-section-2').style.display = 'block';
-    document.getElementById('user-section').style.display = 'none';
-
-    window.location.href = "index.html";
+    // Redirect to home page after login
+    window.location.href = "index.html";  // Redirect AFTER storing user data
 }
 
 // Function to decode JWT token
@@ -61,3 +29,18 @@ window.onload = function () {
         updateUI(JSON.parse(savedUser));
     }
 };
+
+function updateUI(user) {
+    document.getElementById('login-section').style.display = 'none';
+    document.getElementById('login-section-2').style.display = 'none';
+    document.getElementById('user-section').style.display = 'block';
+
+    document.getElementById('user-pic').src = user.picture;
+    document.getElementById('user-name').innerText = `Hello, ${user.name}!`;
+    document.getElementById('user-email').innerText = user.email;
+}
+
+function logout() {
+    localStorage.removeItem('user');
+    window.location.href = "login.html";  // Redirect to login page
+}
