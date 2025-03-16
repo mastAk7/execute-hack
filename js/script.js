@@ -1,4 +1,17 @@
+function togglePopup() {
+    let popup = document.getElementById("user-popup");
+    popup.style.display = (popup.style.display === "block") ? "none" : "block";
+}
 
+// Close popup when clicking outside
+document.addEventListener("click", function(event) {
+    let popup = document.getElementById("user-popup");
+    let profilePic = document.getElementById("user-pic");
+
+    if (popup.style.display === "block" && event.target !== popup && event.target !== profilePic) {
+        popup.style.display = "none";
+    }
+});
 
 function handleCredentialResponse(response) {
     // Decode JWT token to get user details
