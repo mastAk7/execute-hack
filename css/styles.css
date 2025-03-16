@@ -207,11 +207,21 @@ p{
     background-color: #F29F58;
 }
 
-.title-image{
+/* .title-image{
     width: 80%;
     transform: rotate(18deg);
     position: relative;
     bottom: 15%;
+} */
+.col-lg-6 {
+    overflow: hidden;
+}
+.title-image {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px solid white;
 }
 
 .title-row{
