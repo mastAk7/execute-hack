@@ -4,39 +4,39 @@ A web-based dashboard built with Streamlit that fetches live tweets using the Tw
 
 Features
 
-Real-time Tweet Fetching: Fetches live tweets based on user input.
+1. Real-time Tweet Fetching: Fetches live tweets based on user input.
 
-Sentiment Analysis: Classifies tweets as Positive, Negative, or Neutral using a pre-trained DistilBERT model.
+2. Sentiment Analysis: Classifies tweets as Positive, Negative, or Neutral using a pre-trained DistilBERT model.
 
-Visualizations: Interactive Pie Chart, Bar Graph, and Word Cloud for sentiment insights.
+3. Visualizations: Interactive Pie Chart, Bar Graph, and Word Cloud for sentiment insights.
 
-Export Data: Download the sentiment analysis results as a CSV file.
+4. Export Data: Download the sentiment analysis results as a CSV file.
 
 Technologies Used
 
-Python
+1. Python
 
-Streamlit (for the user interface)
+2. Streamlit (for the user interface)
 
-Tweepy (for accessing the Twitter API)
+3. Tweepy (for accessing the Twitter API)
 
-Hugging Face Transformers (for sentiment analysis)
+4. Hugging Face Transformers (for sentiment analysis)
 
-Plotly (for interactive charts)
+5. Plotly (for interactive charts)
 
-Matplotlib and WordCloud (for visualization)
+6. Matplotlib and WordCloud (for visualization)
 
 How It Works
 
-Input Keyword: Users enter a keyword to fetch relevant tweets.
+1. Input Keyword: Users enter a keyword to fetch relevant tweets.
 
-Fetch Tweets: The app fetches recent tweets using Tweepy.
+2. Fetch Tweets: The app fetches recent tweets using Tweepy.
 
-Analyze Sentiment: Sentiment analysis is performed using the DistilBERT model.
+3. Analyze Sentiment: Sentiment analysis is performed using the DistilBERT model.
 
-Visualize Results: Sentiments are displayed via pie chart, bar chart, and word cloud.
+4. Visualize Results: Sentiments are displayed via pie chart, bar chart, and word cloud.
 
-Download Data: Users can export the results as a CSV file.
+5. Download Data: Users can export the results as a CSV file.
 
 Contributions
 
