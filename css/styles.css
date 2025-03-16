@@ -723,7 +723,7 @@ video {
 
 /* Popup Box (Hidden by Default) */
 .popup {
-    height: 170px;
+    height: 150px;
     display: none;
     position: absolute;
     top: 60px;
@@ -739,6 +739,7 @@ video {
 
 /* Popup Content */
 .popup p {
+    color: #255F38;
     margin: 5px 0;
     font-size: 14px;
 }
